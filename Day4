@@ -5,3 +5,15 @@ NB: Remember to update the steps you took
 ls -la /tmp/xfusioncorp.sh 
 sudo chmod 555 /tmp/xfusioncorp.sh 
 ls -la /tmp/xfusioncorp.sh 
+
+
+            SOLUTION:
+    I created a /temp repository with mkdir command
+    I entered into temp repo with cd command and used touch command to create xfusioncorp.sh file
+    I then used ls -la to view the file with the access permissions granted on it
+    I used cd .. to move back to linux folder and then used sudo chmod 555 to change access to /temp/xfusioncorp.sh
+    I then used again ls -la to view the updated access permission on the file
+    Then used Ctrl + S to save the changes and used git status to view the files to be added 
+    I also used git add command to stage the files 
+    and finally ran git commit -m to commit the files 
+    I finally ran git push to push the files to my remote repo
