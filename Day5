@@ -5,3 +5,23 @@ Create group interns
 Add Sam to the interns group 
 Grant group interns read only priviledges to the /tmp folder your created in Day4
 NB: Kindly outline the steps you took to finish this task.
+
+
+                        Solution:
+    I used the command sudo useradd -m Sam to add the user Sam, and then the system demanded for my password which I entered.
+I then ran the command cat /etc/passwd | grep Sam to confirm that the user Sam was created.
+I then ran the command sudo passwd Sam to prompt me to create the Password for the intern Sam, and then I entered Sam#123
+I pressed enter and I was prompted to re-enter the password again which I did.
+I then created the interns group using the command "sudo groupadd interns"
+I confirmed the group was created by running the command "cat /etc/group | grep interns"
+I added Sam to the group interns using the command "sudo usermod -aG interns Sam", the use of -aG here is to ensure he is not removed from any other group
+I confirmed that Sam was added to the group using the command "groups Sam"
+Because I created temp folder instead of tmp on Day4, I used the command mv temp tmp to rename it to tmp 
+While I was still in my linux directory that contains the tmp folder:
+I ran the command sudo chown :interns tmp to change ownership of the the temp folder to interns
+I used sudo chmod 750 tmp to grant read only permission to the group interns
+I used ls -ld tmp to confirm tha the read only permission was granted to interns group
+I used git status to check the status of Day5 file
+I used git add . command to stage Day5 file and tmp folder since I renamed it from temp to tmp
+I used git commit -m "Assignment Day5 details" to commit the file
+I then used the command git push to push the file to my github repo
