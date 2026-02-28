@@ -1,0 +1,83 @@
+# Task 6
+
+## Objective
+1. Rename files from Day1–Day5 to Task1–Task5
+2. Create an AWS account
+3. Enable Multi-Factor Authentication (MFA)
+4. Create Task6 documentation file
+5. Stage, commit, and push all changes to GitHub
+
+---
+                 SOLUTION:
+ 
+# Part 1: Renaming Files
+
+### Step 1: I Navigated to my Project Directory
+cd /mnt/c/users/hp/onedrive/desktop/linux
+
+### Step 2: I Renamed the  Files Using Git
+git mv Day1 Task1
+git mv Day2 Task2
+git mv Day3 Task3
+git mv Day4 Task4
+git mv Day5 Task5
+
+### Step 3: I Confirmed the  Changes
+git status
+
+---
+
+## Part 2: Creating AWS Account
+
+1. Visited https://aws.amazon.com/
+2. Clicked on “Create an AWS Account”
+3. Entered email and account name
+4. Created root user password
+5. Verified email address
+6. Entered billing information
+7. Completed phone verification
+8. Selected Basic Support Plan (Free Tier)
+
+---
+
+## Part 3: Enabling MFA
+
+1. I Logged into AWS Management Console
+2. Navigated to Security Credentials
+3. Selected Multi-Factor Authentication (MFA)
+4. Chose Virtual MFA Device
+5. Installed an authenticator app on phone (Google Authenticator)
+6. Scanned the QR code
+7. Entered two generated codes to activate MFA
+
+---
+
+## Part 4: Creating Task6 File
+
+### Step 1: I Created the File With The Command Below
+touch Task6
+
+### Step 2:I Opened the File with
+nano Task6
+
+### Step 3:I Typed in  All The Processes
+Typed the full documentation of:
+- File renaming
+- AWS account creation
+- MFA setup
+- Git workflow steps
+
+Saved and exited the editor.
+
+---
+
+## Part 5: Staging, Committing, and Pushing Changes
+
+### Step 1: Add All Changes
+git add .
+
+### Step 2: Commit Changes
+git commit -m "Renamed Day files to Task files and added Task6 documentation"
+
+### Step 3: Push to Remote Repository
+git push
